@@ -32,3 +32,6 @@ Data/
 
 # Allow the verified, small, project-owned weights copy in the repository
 !models/oceanembed_patch_cnn_final.pth
+
+!oceanembed_surface_025.nc
+!oceanembed_glorys_target_025.nc

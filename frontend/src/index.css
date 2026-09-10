@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme {
+  --color-ocean-900: #0a192f;
+  --color-ocean-800: #112240;
+  --color-ocean-700: #233554;
+  --color-ocean-600: #172a45;
+  --color-ocean-500: #005f73;
+  --color-ocean-400: #0a9396;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-slate-50);
+    color: var(--color-slate-900);
+  }
+}
