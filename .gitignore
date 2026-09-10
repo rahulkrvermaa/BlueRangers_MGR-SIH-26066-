@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment/secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw datasets and scientific data
+Data/
+*.nc
+
+# Model weights
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Allow the verified, small, project-owned weights copy in the repository
+!models/oceanembed_patch_cnn_final.pth
