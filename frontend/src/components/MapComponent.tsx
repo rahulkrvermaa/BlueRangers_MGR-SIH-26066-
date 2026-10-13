@@ -64,12 +64,13 @@ export const MapComponent: React.FC<MapProps> = ({
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="h-[380px] w-full rounded-xl overflow-hidden border border-slate-200 shadow-sm relative">
+      <div className="h-[380px] w-full rounded-xl overflow-hidden border border-slate-200 shadow-sm relative isolate z-0">
         <MapContainer
           center={[lat, lon]}
           zoom={4}
           minZoom={3}
           maxZoom={9}
+          scrollWheelZoom={false}
           className="h-full w-full cursor-crosshair"
         >
           <TileLayer
