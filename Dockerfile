@@ -19,5 +19,8 @@ COPY backend/app/ app/
 # Copy model checkpoint to /models, where app/core/config.py expects it
 COPY models/ /models/
 
+# Copy NetCDF data files to filesystem root, where app/core/config.py expects them (BASE_DIR resolves to /)
+COPY oceanembed_surface_025.nc oceanembed_glorys_target_025.nc /
+
 # Run uvicorn on the port specified by PORT, defaulting to 8000
 CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}
